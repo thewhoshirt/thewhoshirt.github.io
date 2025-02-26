@@ -28,5 +28,13 @@ body {
     color: #023020;
     position: sticky;
     width: auto;
+    /* bottom: 0; */
 
+
+}
+
+.chefPro{
+    float: right;
+    padding: 15px;
+    width: 45%;
 }
