@@ -1,10 +1,12 @@
 body {
     background-color: slategray;
 }
+
 .topNav{
     background-color: #023020;
     overflow: hidden;
-    padding-left:16px
+    padding-left:16px;
+    padding-right:16px;
 }
 
 .topNav a{
@@ -21,6 +23,31 @@ body {
     color: black;
 }
 
+#theme{
+    float: right;
+}
+
+main{
+    margin:20px 75px 20px 75px;
+}
+
+h1{
+    font-size:40px;
+}
+
+.chefPro{
+    float:right;
+    padding: 15px;
+    padding-right:150px;
+    width: 30%;
+}
+
+#mainTitle{
+    padding-top:10%;
+    text-align: center;
+    padding-bottom:10%
+}
+
 .footer{
     background-color: #777;
     padding: 16px;
@@ -28,13 +55,4 @@ body {
     color: #023020;
     position: sticky;
     width: auto;
-    /* bottom: 0; */
-
-
-}
-
-.chefPro{
-    float: right;
-    padding: 15px;
-    width: 30%;
 }

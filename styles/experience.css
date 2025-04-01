@@ -4,7 +4,8 @@ body {
 .topNav{
     background-color: #023020;
     overflow: hidden;
-    padding-left:16px
+    padding-left:16px;
+    padding-right:16px;
 }
 
 .topNav a{
@@ -21,12 +22,30 @@ body {
     color: black;
 }
 
+#theme{
+    float: right;
+}
+
+main{
+    margin:20px 75px 20px 75px;
+}
+
+h1{
+    font-size:40px;
+}
+
+img{
+    float: right;
+    width:20%;
+}
+
 .footer{
     background-color: #777;
     padding: 16px;
     text-align: center;
     color: #023020;
     position: sticky;
+    bottom:20px;
     width: auto;
 
 }
