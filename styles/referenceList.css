@@ -21,6 +21,10 @@ body {
     color: black;
 }
 
+#theme{
+    float: right;
+}
+
 .footer{
     background-color: #777;
     padding: 16px;
@@ -30,3 +34,4 @@ body {
     width: auto;
 
 }
+
