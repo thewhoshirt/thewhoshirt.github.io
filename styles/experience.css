@@ -39,6 +39,12 @@ img{
     width:20%;
 }
 
+.video-container{
+    display:inline-block;
+    gap:20px;
+    height:fit-content;
+}
+
 .footer{
     background-color: #777;
     padding: 16px;
