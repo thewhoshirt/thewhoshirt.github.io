@@ -10,6 +10,7 @@
     <!-- jQuery Validation Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryvalidate/1.19.5/jquery.validate.min.js"></script>
     <script src="./scripts/contacts.js"></script>
+    
 </head>  
 <body>
     <header class="topNav">
@@ -45,21 +46,75 @@
         </form>
         
         <section>
-            <h1> Contact Me Page</h1>
-            <h2>Find me at the links below</h2>
-            <div>
-                links to stuff here??
-            </div>
+            <h1> Contact Or Visit Me Page</h1>
+            <h2>Try Some of My Restuarants In London</h2>
+           
+            <div id="map"> </div>
             
         </section>
-        
+        <script>
+            function initMap(){
+                const center  = {lat: 51.49841, lng: -0.09988}
+                
+                
+                const map = new google.maps.Map(document.getElementById("map"),{
+                    center: center,
+                    zoom: 12
+                });
+                
+                
+                // map locations info
+                const locations = [ 
+                    { lat: 51.48549, lng: -0.16200, msg: "Restaurant Gordon Ramsay"},
+    
+                    {lat: 51.49968 , lng: -0.15677 , msg:"Pétrus" },
+                     
+                    {lat: 51.51021, lng: -0.11946, msg: "Savoy Grill"}, 
+
+                    {lat: 51.51034, lng: -0.12066, msg: "The River Restaurant"},
+
+                    {lat: 51.51264, lng: -0.15097, msg: "Lucky Cat - Mayfair"},
+
+                    {lat: 51.50977, lng: -0.03747, msg: "Bread Street Kitchen & Bar - Limehouse"},
+
+                    {lat: 51.51087, lng: -0.13855, msg: "Heddon Street Kitchen"},
+
+                    {lat: 51.52397, lng: -0.07698, msg: "Pizza East - Shoreditch"},
+
+                    {lat: 51.51403, lng: -0.09553, msg: "Street Burger - St Paul's"},
+
+                    {lat: 51.50349, lng: -0.010058, msg: "Street Pizza - Southwark"}
+                    
+                ]
+    
+                locations.forEach(loc =>{ 
+                    const marker = new google.maps.Marker({
+                    position: {lat: loc.lat, lng: loc.lng},
+                    map: map,
+                    });
+    
+                    const infoWindow = new google.maps.InfoWindow({
+                        content: `<h4> ${loc.msg} </h4>`
+                    });
+    
+                    marker.addListener("click", () =>{
+                        infoWindow.open(map, marker)
+                    });
+    
+                })
+    
+               
+            }
+    
+        </script>
+
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqG5H4vZjkM47VGI56V2BRovyKK0AfRgk&callback=initMap"></script>
+
     </main>
     <footer>
         <div class="footer"> Footer &copy; Copyright 2025 </div>
     </footer>
-
-
     
-
 </body>
 </html>
