@@ -25,7 +25,7 @@ $(document).ready( function() {
     $( "#accordion" ).accordion();
 
     var apikey = "AIzaSyBygxWHhXyl-m3c3fGEhQzpWtCbDvlmdgQ";
-    var url = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=Microsoft&maxResults=5&order=relevance&type=video&key=${apikey}`
+    var url = `https://www.googleapis.com/youtube/v3/playlistItems?playlistId=PLTzMGnJjrsSyDJU9XClzZtuJ6GAIsvRk7&part=snippet&maxResults=5&order=date&type=video&key=${apikey}`
     $.get(url, function(data){
         if(data.items && data.items.length > 0){
             var videoHtml = "";
