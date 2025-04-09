@@ -3,10 +3,10 @@ $(document).ready(function(){
     var currentTheme = localStorage.getItem("theme");
     if (currentTheme == null){
         localStorage.setItem("theme","dark")
-    }
+    };
     if (currentTheme == "light"){
         $("body").css("backgroundColor","#f2f2f2")
-    }
+    };
 
     // toggles page theme with the button
     $("#theme").click(function(){
@@ -18,7 +18,7 @@ $(document).ready(function(){
         else{
             currentTheme = localStorage.setItem("theme","dark");
             $("body").css("backgroundColor","slategray")
-        }
+        };
     });
     $("#contactForm").validate({
         rules:{
@@ -59,3 +59,57 @@ $(document).ready(function(){
     });
     
 });
+
+// google maps api
+function initMap(){
+    const center  = {lat: 51.49841, lng: -0.09988}
+    
+    
+    const map = new google.maps.Map(document.getElementById("map"),{
+        center: center,
+        zoom: 12
+    });
+    
+    
+    // map locations info
+    const locations = [ 
+        { lat: 51.48549, lng: -0.16200, msg: "Restaurant Gordon Ramsay"},
+
+        {lat: 51.49968 , lng: -0.15677 , msg:"Pétrus" },
+         
+        {lat: 51.51021, lng: -0.11946, msg: "Savoy Grill"}, 
+
+        {lat: 51.51034, lng: -0.12066, msg: "The River Restaurant"},
+
+        {lat: 51.51264, lng: -0.15097, msg: "Lucky Cat - Mayfair"},
+
+        {lat: 51.50977, lng: -0.03747, msg: "Bread Street Kitchen & Bar - Limehouse"},
+
+        {lat: 51.51087, lng: -0.13855, msg: "Heddon Street Kitchen"},
+
+        {lat: 51.52397, lng: -0.07698, msg: "Pizza East - Shoreditch"},
+
+        {lat: 51.51042, lng: -0.12075, msg: "Restaurant 1890"},
+
+        {lat: 51.50349, lng: -0.010058, msg: "Street Pizza - Southwark"},
+
+        {lat: 36.11591, lng: -115.17333, msg: " Hell's Kitchen - Ceaser's Palace, Las Vegas"}
+        
+    ]
+
+    locations.forEach(loc =>{ 
+        const marker = new google.maps.Marker({
+        position: {lat: loc.lat, lng: loc.lng},
+        map: map,
+        });
+
+        const infoWindow = new google.maps.InfoWindow({
+            content: `<h4> ${loc.msg} </h4>`
+        });
+
+        marker.addListener("click", () =>{
+            infoWindow.open(map, marker)
+        });
+
+    }) 
+};
