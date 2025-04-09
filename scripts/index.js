@@ -3,8 +3,8 @@ $(document).ready(function(){
     var currentTheme = localStorage.getItem("theme");
     if (currentTheme == null){
         localStorage.setItem("theme","light");
-        $("#lightMode").css("display","none");
-        $("#darkMode").css("display","block");
+        $("#lightMode").css("display","block");
+        $("#darkMode").css("display","none");
     };
     if (currentTheme == "dark"){
         $("body").css({"backgroundColor":" #060c04","color":" #f9d864"});
@@ -40,6 +40,5 @@ $(document).ready(function(){
             },
             duration:3000
         },'linear').animate({top:"+=50"},3000).animate({top:"-=50"},3000,animateTitle)
-
     });
 });
