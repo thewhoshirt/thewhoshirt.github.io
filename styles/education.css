@@ -34,14 +34,17 @@ h1{
     font-size:40px;
 }
 
-img{
+figure{
     float:right;
-    width:20%;
-    padding:40px;
+    width:40%;
+    padding:10px;
+}
+img{
+    width: 100%;
 }
 
 #tabs{
-    width:60%;
+    width:65%;
     margin:50px;
     
 }

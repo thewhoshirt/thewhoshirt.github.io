@@ -56,5 +56,6 @@ $(document).ready(function(){
                 required:"Please let me know why you want to contact me"
             },
         }
-    })
+    });
+    
 });
