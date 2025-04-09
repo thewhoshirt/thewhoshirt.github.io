@@ -39,6 +39,6 @@ $(document).ready(function(){
               $(this).css('transform','rotate('+now+'deg)');  
             },
             duration:3000
-        },'linear').animate({top:"+=50"},3000).animate({top:"-=50"},3000,animateTitle)
+        },'linear').animate({top:"+=50"},3000).animate({top:"-=50"},3000)
     });
 });
