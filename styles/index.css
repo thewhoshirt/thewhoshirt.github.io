@@ -48,6 +48,24 @@ h1{
     padding-bottom:10%
 }
 
+#mainTitle{
+    padding-top:10%;
+    text-align: center;
+    padding-bottom:10%
+}
+
+.knife{
+    width:20%;
+    position:absolute;
+    left:22%;
+    top:400px;
+    border-spacing:0px;
+}
+
+#lightMode{
+    display:none;
+}
+
 .footer{
     background-color: #9a4a0a;
     padding: 16px;
