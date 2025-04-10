@@ -16,10 +16,12 @@ body {
     padding: 16px 18px;
     text-decoration: none;
     font-size: 17px;
+    
 }
 .topNav a:hover {
     background-color: #9a4a0a;
     color: #f9d864;
+    
 }
 
 #theme{
