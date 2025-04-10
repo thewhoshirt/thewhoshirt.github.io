@@ -39,12 +39,14 @@ $(document).ready(function(){
         duration:2000
     },'linear')});
 
-    $( function() {
-        // var forcePlaceholderSize = $( ".list_img" ).sortable( "option", "forcePlaceholderSize" );
-        // $( "#sortable" ).sortable( "option", "forcePlaceholderSize", true );
+    $( "#sortable" ).sortable();
+
+    // $( function() {
+    //     // var forcePlaceholderSize = $( ".list_img" ).sortable( "option", "forcePlaceholderSize" );
+    //     // $( "#sortable" ).sortable( "option", "forcePlaceholderSize", true );
         
-        $( "#sortable" ).sortable({
-            forcePlaceholderSize: true
-        });
-      });
+    //     $( "#sortable" ).sortable({
+    //         forcePlaceholderSize: true
+    //     });
+    //   });
 });
