@@ -1,7 +1,4 @@
-body {
-    background-color: #f5f9dc;
-}
-
+/* navbar / header */
 .topNav{
     background-color: #112f08;
     overflow: hidden;
@@ -28,25 +25,25 @@ body {
     float: right;
 }
 
+/* main body */
+body {
+    background-color: #f5f9dc;
+}
+
 main{
     margin:20px 75px 20px 75px;
 }
 
+li{
+    padding-bottom:30px;
+}
+
+/* headers */
 h1{
     font-size:40px;
 }
-h2{
-    font-size: 30px;
-}
 
-h3{
-    font-size: 25px;
-}
-
-#darkMode{
-    display:none;
-}
-
+/* footer */
 .footer{
 
     background-color: #9a4a0a;
