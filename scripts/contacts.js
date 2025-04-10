@@ -2,10 +2,10 @@ $(document).ready(function(){
     // sets page theme
     var currentTheme = localStorage.getItem("theme");
     if (currentTheme == null){
-        localStorage.setItem("theme","dark")
+        localStorage.setItem("theme","light")
     };
-    if (currentTheme == "light"){
-        $("body").css("backgroundColor","#f2f2f2")
+    if (currentTheme == "dark"){
+        $("body").css({"backgroundColor":" #060c04","color":" #f9d864"});
         $("#darkMode").css("display","none");
         $("#lightMode").css("display","block");
     };
@@ -13,15 +13,15 @@ $(document).ready(function(){
     // toggles page theme with the button
     $("#theme").click(function(){
         currentTheme = localStorage.getItem("theme");
-        if (currentTheme == "dark"){
-            currentTheme = localStorage.setItem("theme","light");
-            $("body").css("backgroundColor","#f2f2f2")
+        if (currentTheme == "light"){
+            currentTheme = localStorage.setItem("theme","dark");
+            $("body").css({"backgroundColor":" #060c04","color":" #f9d864"})
             $("#darkMode").css("display","none");
             $("#lightMode").css("display","block");
         }
         else{
-            currentTheme = localStorage.setItem("theme","dark");
-            $("body").css("backgroundColor","black")
+            currentTheme = localStorage.setItem("theme","light");
+            $("body").css({"backgroundColor":" #f5f9dc","color":" #112f08"});
             $("#darkMode").css("display","block");
             $("#lightMode").css("display","none");
         };
@@ -38,7 +38,18 @@ $(document).ready(function(){
             .animate({ borderSpacing: 0 }, {step: function(now,fx) {
                     $(this).css('transform','rotate('+now+'deg)');}, duration:500},'linear')
     });
-
+    $(".whisk").click(function animateTitle(){
+        $(".whisk").animate({borderSpacing: +100 }, {
+            step: function(now, fx) {$(this).css('transform','rotate('+now+'deg)');},duration:500},'linear')
+            .animate({ borderSpacing: 0 }, {step: function(now,fx) {
+              $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
+            .animate({ borderSpacing: +100 }, {step: function(now,fx) {
+                $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
+            .animate({ borderSpacing: 0 }, {step: function(now,fx) {
+                    $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
+            .animate({ borderSpacing: 0 }, {step: function(now,fx) {
+                $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
+    });
     // contact form validation
     $("#contactForm").validate({
         rules:{
@@ -70,7 +81,7 @@ $(document).ready(function(){
             },
             phone:{
                 required:"Please enter your phone number",
-                minlength:"Plese enter a valid phone number"
+                minlength:"Please enter a valid phone number"
             },
             comment:{
                 required:"Please let me know why you want to contact me"

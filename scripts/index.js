@@ -21,7 +21,7 @@ $(document).ready(function(){
         }
         else{
             currentTheme = localStorage.setItem("theme","light");
-            $("body").css({"backgroundColor":" #f5f9dc","color":" #112f08"})
+            $("body").css({"backgroundColor":" #f5f9dc","color":" #112f08"});
             $("#darkMode").css("display","none");
             $("#lightMode").css("display","block");
         }

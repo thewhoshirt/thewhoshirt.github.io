@@ -6,6 +6,7 @@ body {
     overflow: hidden;
     padding-left:16px;
     padding-right:16px;
+    width: auto;
 }
 
 .topNav a{
@@ -20,6 +21,7 @@ body {
 .topNav a:hover {
     background-color: #9a4a0a;
     color: #f9d864;
+
 }
 
 #theme{
@@ -47,6 +49,10 @@ img{
     width:65%;
     margin:50px;
     left: 10%;
+}
+
+#darkMode{
+    display:none;
 }
 
 .footer{
