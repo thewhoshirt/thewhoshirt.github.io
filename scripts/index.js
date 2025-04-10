@@ -32,7 +32,7 @@ $(document).ready(function(){
     $(".knife").animate({ left:"100", borderSpacing: +50 }, {
         step: function(now,fx) {$(this).css('transform','rotate('+now+'deg)');},
         duration:1500},'swing')
-         .animate({ left:"300", borderSpacing: 0 }, {
+         .animate({ left:"230", borderSpacing: 0 }, {
         step: function(now,fx) {
           $(this).css('transform','rotate('+now+'deg)');  
         },
