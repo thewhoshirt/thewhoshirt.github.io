@@ -8,12 +8,8 @@
     <!-- style sheets -->
     <link rel="stylesheet" href="./styles/contacts.css">
     <link rel="stylesheet" href="./scripts/jquery-ui-1.14.1.custom-GR/jquery-ui.css">
-    <link rel="stylesheet" href="./scripts/jquery-ui-1.14.1.custom-GR/jquery-ui.structure.css">
-    <link rel="stylesheet" href="./scripts/jquery-ui-1.14.1.custom-GR/jquery-ui.theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-  
-  
-  
     <!-- jQuery Validation Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryvalidate/1.19.5/jquery.validate.min.js"></script>
 
@@ -35,12 +31,12 @@
     
     <main>
         <Section>
-            <h1> Contact Or Visit Me</h1>
+            <h1 class="animate__animated animate__slideInLeft"> Contact Or Visit Me</h1>
             <img src="./images/whiskLightMode.png" class="whisk" id="lightMode">
             <img src="./images/whiskDarkMode.png" class="whisk" id="darkMode">
         </Section>
 
-        <form id="contactForm">
+        <form id="contactForm" class="animate__animated animate__slideInRight">
             <h2>Send Me A Message!</h2>
 
             <label for="name">Name:</label>
@@ -63,8 +59,8 @@
             <input type="reset"></input>
         </form>
         
-        <section>
-            <h2>Try Some of My Restaurants In London</h2>
+        <section class="animate__animated animate__slideInLeft">
+            <h3>Try Some of My Restaurants In London</h3>
            
             <div id="map"> </div>
         </section>
