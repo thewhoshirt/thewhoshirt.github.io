@@ -53,12 +53,13 @@ figure{
     float:right;
     width:40%;
     padding:10px;
+    margin-bottom:100px;
 }
 .imgGord{
     width: 100%;
     border: solid;
     border-color: #f9d864;
-
+    
 }
 
 
@@ -67,18 +68,13 @@ figure{
 }
 
 #contactForm{
-    padding:100px;
-    float:right;
+    padding:50px;
 }
 
 input, textarea{
     margin-bottom: 15px;
 }
 
-
-#darkMode{
-    display:none;
-}
 
 #map {
     height: 450px;
@@ -93,4 +89,3 @@ input, textarea{
     position: sticky;
     width: auto;
 }
-
