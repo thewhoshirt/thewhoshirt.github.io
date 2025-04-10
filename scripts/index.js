@@ -39,14 +39,9 @@ $(document).ready(function(){
         duration:2000
     },'linear')});
 
-    $( "#sortable" ).sortable();
-
-    // $( function() {
-    //     // var forcePlaceholderSize = $( ".list_img" ).sortable( "option", "forcePlaceholderSize" );
-    //     // $( "#sortable" ).sortable( "option", "forcePlaceholderSize", true );
+    $( "#sortable" ).sortable({
+        axis: "x" ,
+        items: "li:not(.ui-state-highlight)"
         
-    //     $( "#sortable" ).sortable({
-    //         forcePlaceholderSize: true
-    //     });
-    //   });
+    });
 });
