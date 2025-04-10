@@ -58,8 +58,13 @@ background-color: #D5D8C3;
 }
 
 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+figcaption{
     float: right;
-    width:20%;
 }
 
 .video-container{

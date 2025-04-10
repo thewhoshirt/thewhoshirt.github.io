@@ -37,7 +37,9 @@ $(document).ready( function() {
 
 
   // creates the accordion sections
-    $( "#accordion" ).accordion();
+    $( "#accordion" ).accordion({
+        heightStyle: "content"
+    });
 
 // just commented out for live server
 
