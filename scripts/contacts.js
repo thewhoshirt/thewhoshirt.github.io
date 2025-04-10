@@ -51,7 +51,7 @@ $(document).ready(function(){
                 email:true,
             },
             phone:{
-                reuired:true,
+                required:true,
                 minlength:10,
                 maxlength:10
             },
