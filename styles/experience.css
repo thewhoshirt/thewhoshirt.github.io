@@ -36,6 +36,18 @@ h1{
     font-size:40px;
 }
 
+.rollingPin{
+    width:8.5%;
+    position:absolute;
+    right:7%;
+    top:90px;
+    border-spacing:0px;
+}
+
+#darkMode{
+    display:none;
+}
+
 img{
     float: right;
     width:20%;
