@@ -146,6 +146,10 @@ img{
 
 /* media queries */
 @media screen and (width <= 1000px){
+    main{
+        margin:20px 50px 20px 50px;
+    }
+
     .knife{
         width:45%;
         left:30%;
@@ -161,7 +165,7 @@ img{
 
     .imgContainer{
         float:none;
-        width:90%;
+        width:80%;
     }
 
     #rating{

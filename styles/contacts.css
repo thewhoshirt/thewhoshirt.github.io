@@ -1,7 +1,4 @@
-body {
-    background-color: #f5f9dc;
-}
-
+/* navbar / header */
 .topNav{
     background-color: #112f08;
     overflow: hidden;
@@ -26,10 +23,16 @@ body {
     float: right;
 }
 
+/* main body */
+body {
+    background-color: #f5f9dc;
+}
+
 main{
     margin:20px 150px 20px 150px;
 }
 
+/* headers */
 h1{
     font-size:40px;
 }
@@ -41,6 +44,7 @@ h3{
     font-size: 25px;
 }
 
+/* animated whisk */
 .whisk{
     width:6%;
     position:absolute;
@@ -49,6 +53,11 @@ h3{
     border-spacing:0px;
 }
 
+#darkMode{
+    display:none;
+}
+
+/* images */
 figure{
     float:right;
     width:40%;
@@ -59,14 +68,9 @@ figure{
     width: 100%;
     border: solid;
     border-color: #f9d864;
-    
 }
 
-
-#darkMode{
-    display:none;
-}
-
+/* inputs/form */
 #contactForm{
     padding:50px;
 }
@@ -75,12 +79,15 @@ input, textarea{
     margin-bottom: 15px;
 }
 
-
+/*  google maps api */
 #map {
     height: 450px;
     width: 50%;
+    border: solid;
+    border-color: #f9d864;
 }
 
+/* footer */
 .footer{
     background-color: #9a4a0a;
     padding: 16px;
@@ -88,4 +95,40 @@ input, textarea{
     color: #060c04;
     position: sticky;
     width: auto;
+}
+
+/* media queries */
+@media screen and (width <= 800px){
+    main{
+        margin:20px 50px 20px 50px;
+    }
+
+    .whisk{
+        width:11%;
+        left: 53%;
+        top:110px;
+    }
+
+    figure{
+        float:none;
+        width:80%;
+    }
+
+    #map{
+        width:100%;
+    }
+}
+
+@media screen and (width <= 500px){
+    .whisk{
+        left: 82%;
+        top:130px;
+    }
+}
+
+@media screen and (width <= 450px){
+    .whisk{
+        left: 84%;
+        top:200px;
+    }
 }
