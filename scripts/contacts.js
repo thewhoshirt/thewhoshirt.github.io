@@ -28,16 +28,18 @@ $(document).ready(function(){
     });
 
     // whisk animation
+    // whisk animation
     $(".whisk").click(function animateTitle(){
-        $(".whisk").animate({ left:"100", borderSpacing: +50 }, {
-            step: function(now,fx) {$(this).css('transform','rotate('+now+'deg)');},
-            duration:1500},'linear')
-             .animate({ left:"300", borderSpacing: 0 }, {
-            step: function(now,fx) {
-              $(this).css('transform','rotate('+now+'deg)');  
-            },
-            duration:6000
-        },'linear').animate({top:"+=20"},1000).animate({top:"-=20"},1000)
+        $(".whisk").animate({borderSpacing: +100 }, {
+            step: function(now, fx) {$(this).css('transform','rotate('+now+'deg)');},duration:500},'linear')
+            .animate({ borderSpacing: 0 }, {step: function(now,fx) {
+              $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
+            .animate({ borderSpacing: +100 }, {step: function(now,fx) {
+                $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
+            .animate({ borderSpacing: 0 }, {step: function(now,fx) {
+                    $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
+            .animate({ borderSpacing: 0 }, {step: function(now,fx) {
+                $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
     });
 
     // contact form validation

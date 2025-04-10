@@ -38,12 +38,13 @@ h1{
 }
 
 .whisk{
-    width:10%;
+    width:7%;
     position:absolute;
-    left: 33%;
+    left: 35%;
     top:90px;
     border-spacing:0px;
 }
+
 
 #darkMode{
     display:none;
