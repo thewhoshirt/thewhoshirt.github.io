@@ -6,6 +6,8 @@ $(document).ready(function(){
     };
     if (currentTheme == "light"){
         $("body").css("backgroundColor","#f2f2f2")
+        $("#darkMode").css("display","none");
+        $("#lightMode").css("display","block");
     };
 
     // toggles page theme with the button
@@ -14,12 +16,31 @@ $(document).ready(function(){
         if (currentTheme == "dark"){
             currentTheme = localStorage.setItem("theme","light");
             $("body").css("backgroundColor","#f2f2f2")
+            $("#darkMode").css("display","none");
+            $("#lightMode").css("display","block");
         }
         else{
             currentTheme = localStorage.setItem("theme","dark");
-            $("body").css("backgroundColor","slategray")
+            $("body").css("backgroundColor","black")
+            $("#darkMode").css("display","block");
+            $("#lightMode").css("display","none");
         };
     });
+
+    // whisk animation
+    $(".whisk").click(function animateTitle(){
+        $(".whisk").animate({ left:"100", borderSpacing: +50 }, {
+            step: function(now,fx) {$(this).css('transform','rotate('+now+'deg)');},
+            duration:1500},'linear')
+             .animate({ left:"300", borderSpacing: 0 }, {
+            step: function(now,fx) {
+              $(this).css('transform','rotate('+now+'deg)');  
+            },
+            duration:6000
+        },'linear').animate({top:"+=20"},1000).animate({top:"-=20"},1000)
+    });
+
+    // contact form validation
     $("#contactForm").validate({
         rules:{
             name:{

@@ -37,8 +37,20 @@ h1{
     font-size:40px;
 }
 
+.whisk{
+    width:10%;
+    position:absolute;
+    left: 33%;
+    top:90px;
+    border-spacing:0px;
+}
+
+#darkMode{
+    display:none;
+}
+
 #contactForm{
-    padding:75px;
+    padding:100px;
     float:right;
 }
 

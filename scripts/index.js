@@ -30,15 +30,15 @@ $(document).ready(function(){
     });
 
      // animating title knife
-     $(".knife").click(function animateTitle(){
+    $(".knife").click(function animateTitle(){
         $(".knife").animate({ left:"100", borderSpacing: +50 }, {
             step: function(now,fx) {$(this).css('transform','rotate('+now+'deg)');},
-            duration:3000},'linear')
+            duration:1500},'linear')
              .animate({ left:"300", borderSpacing: 0 }, {
             step: function(now,fx) {
               $(this).css('transform','rotate('+now+'deg)');  
             },
-            duration:3000
-        },'linear').animate({top:"+=50"},3000).animate({top:"-=50"},3000)
+            duration:6000
+        },'linear').animate({top:"+=20"},1000).animate({top:"-=20"},1000)
     });
 });
