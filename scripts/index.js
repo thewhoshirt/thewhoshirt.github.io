@@ -41,4 +41,13 @@ $(document).ready(function(){
             duration:6000
         },'linear').animate({top:"+=20"},1000).animate({top:"-=20"},1000)
     });
+
+    $( function() {
+        // var forcePlaceholderSize = $( ".list_img" ).sortable( "option", "forcePlaceholderSize" );
+        // $( "#sortable" ).sortable( "option", "forcePlaceholderSize", true );
+        
+        $( "#sortable" ).sortable({
+            forcePlaceholderSize: true
+        });
+      });
 });
