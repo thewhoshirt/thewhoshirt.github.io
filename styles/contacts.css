@@ -49,6 +49,18 @@ h3{
     border-spacing:0px;
 }
 
+figure{
+    float:right;
+    width:40%;
+    padding:10px;
+}
+.imgGord{
+    width: 100%;
+    border: solid;
+    border-color: #f9d864;
+
+}
+
 
 #darkMode{
     display:none;
