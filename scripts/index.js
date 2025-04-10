@@ -3,8 +3,6 @@ $(document).ready(function(){
     var currentTheme = localStorage.getItem("theme");
     if (currentTheme == null){
         localStorage.setItem("theme","light");
-        $("#lightMode").css("display","block");
-        $("#darkMode").css("display","none");
     };
     if (currentTheme == "dark"){
         $("body").css({"backgroundColor":" #060c04","color":" #f9d864"});
@@ -29,16 +27,15 @@ $(document).ready(function(){
         }
     });
 
-     // animating title knife
-    $(".knife").click(function animateTitle(){
-        $(".knife").animate({ left:"100", borderSpacing: +50 }, {
-            step: function(now,fx) {$(this).css('transform','rotate('+now+'deg)');},
-            duration:1500},'linear')
-             .animate({ left:"300", borderSpacing: 0 }, {
-            step: function(now,fx) {
-              $(this).css('transform','rotate('+now+'deg)');  
-            },
-            duration:6000
-        },'linear').animate({top:"+=20"},1000).animate({top:"-=20"},1000)
-    });
+   //  animating title knife
+   $(".knife").click(function animateTitle(){
+    $(".knife").animate({ left:"100", borderSpacing: +50 }, {
+        step: function(now,fx) {$(this).css('transform','rotate('+now+'deg)');},
+        duration:1500},'swing')
+         .animate({ left:"300", borderSpacing: 0 }, {
+        step: function(now,fx) {
+          $(this).css('transform','rotate('+now+'deg)');  
+        },
+        duration:2000
+    },'linear')});
 });

@@ -28,18 +28,15 @@ $(document).ready(function(){
     });
 
     // whisk animation
-    // whisk animation
     $(".whisk").click(function animateTitle(){
         $(".whisk").animate({borderSpacing: +100 }, {
             step: function(now, fx) {$(this).css('transform','rotate('+now+'deg)');},duration:500},'linear')
             .animate({ borderSpacing: 0 }, {step: function(now,fx) {
-              $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
+              $(this).css('transform','rotate('+now+'deg)');}, duration:500},'linear')
             .animate({ borderSpacing: +100 }, {step: function(now,fx) {
-                $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
+                $(this).css('transform','rotate('+now+'deg)');}, duration:500},'linear')
             .animate({ borderSpacing: 0 }, {step: function(now,fx) {
-                    $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
-            .animate({ borderSpacing: 0 }, {step: function(now,fx) {
-                $(this).css('transform','rotate('+now+'deg)');   }, duration:500},'linear')
+                    $(this).css('transform','rotate('+now+'deg)');}, duration:500},'linear')
     });
 
     // contact form validation
