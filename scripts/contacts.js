@@ -36,47 +36,47 @@ $(document).ready(function(){
             .animate({ borderSpacing: +100 }, {step: function(now,fx) {
                 $(this).css('transform','rotate('+now+'deg)');}, duration:500},'linear')
             .animate({ borderSpacing: 0 }, {step: function(now,fx) {
-                    $(this).css('transform','rotate('+now+'deg)');}, duration:500},'linear')
+                $(this).css('transform','rotate('+now+'deg)');}, duration:500},'linear')
     });
 
-    // contact form validation
-    $("#contactForm").validate({
-        rules:{
-            name:{
-                required:true,
-                minlength:3
-            },
-            email:{
-                required:true,
-                email:true,
-            },
-            phone:{
-                required:true,
-                minlength:10,
-                maxlength:10
-            },
-            comment:{
-                required:true,
-            }
-        },
-        messages:{
-            name:{
-                required:"Please enter your name",
-                minlength:"Name must be more than 3 characters"
-            },
-            email:{
-                required:"Please enter your email",
-                email:"Please enter a valid email address"
-            },
-            phone:{
-                required:"Please enter your phone number",
-                minlength:"Please enter a valid phone number"
-            },
-            comment:{
-                required:"Please let me know why you want to contact me"
-            },
-        }
-    });
+    // // contact form validation
+    // $("#contactForm").validate({
+    //     rules:{
+    //         name:{
+    //             required:true,
+    //             minlength:3
+    //         },
+    //         email:{
+    //             required:true,
+    //             email:true,
+    //         },
+    //         phone:{
+    //             required:true,
+    //             minlength:10,
+    //             maxlength:10
+    //         },
+    //         comment:{
+    //             required:true,
+    //         }
+    //     },
+    //     messages:{
+    //         name:{
+    //             required:"Please enter your name",
+    //             minlength:"Name must be more than 3 characters"
+    //         },
+    //         email:{
+    //             required:"Please enter your email",
+    //             email:"Please enter a valid email address"
+    //         },
+    //         phone:{
+    //             required:"Please enter your phone number",
+    //             minlength:"Please enter a valid phone number"
+    //         },
+    //         comment:{
+    //             required:"Please let me know why you want to contact me"
+    //         },
+    //     }
+    // });
     
 });
 
@@ -84,12 +84,10 @@ $(document).ready(function(){
 function initMap(){
     const center  = {lat: 51.49841, lng: -0.09988}
     
-    
     const map = new google.maps.Map(document.getElementById("map"),{
         center: center,
         zoom: 12
-    });
-    
+    }); 
     
     // map locations info
     const locations = [ 
@@ -113,8 +111,7 @@ function initMap(){
 
         {lat: 51.50349, lng: -0.010058, msg: "Street Pizza - Southwark"},
 
-        {lat: 36.11591, lng: -115.17333, msg: " Hell's Kitchen - Ceaser's Palace, Las Vegas"}
-        
+        {lat: 36.11591, lng: -115.17333, msg: " Hell's Kitchen - Ceaser's Palace, Las Vegas"} 
     ]
 
     locations.forEach(loc =>{ 
