@@ -123,4 +123,10 @@ input, textarea{
     }
 }
 
+@media screen and (width <=450px){
+    .whisk{
+        top:200px;
+    }
+}
+
 

@@ -36,6 +36,7 @@ main{
 
 li{
     padding-bottom:30px;
+    overflow-wrap: break-word;
 }
 
 /* headers */

@@ -87,3 +87,9 @@ img{
         top:180px;
     }
 }
+
+@media screen and (width <= 450px){
+    img{
+        width:160%;
+    }
+}
