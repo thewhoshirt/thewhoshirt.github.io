@@ -27,6 +27,7 @@ $(document).ready( function() {
         }
     });
 
+    // rolling pin animations
     $(".rollingPin").click(function(){
         $(".rollingPin").animate({borderSpacing: +720 }, {
             step: function(now, fx) {$(this).css('transform','rotate('+now+'deg)');},duration:1000},'linear')
