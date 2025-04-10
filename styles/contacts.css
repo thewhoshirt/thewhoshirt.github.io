@@ -41,15 +41,11 @@ h2{
     font-size: 30px;
 }
 
-h3{
-    font-size: 25px;
-}
-
 /* animated whisk */
 .whisk{
     width:6%;
     position:absolute;
-    left: 33%;
+    right: 60%;
     top:55px;
     border-spacing:0px;
 }
@@ -99,20 +95,27 @@ input, textarea{
 }
 
 /* media queries */
+@media screen and (width <= 1300px){
+    .whisk{
+        top:70px;
+        right:10%;
+        width:11%;
+    }
+    figure{
+        float:none;
+        width:80%;
+    }
+}
+
 @media screen and (width <= 800px){
     main{
         margin:20px 50px 20px 50px;
     }
 
     .whisk{
-        width:11%;
-        left: 53%;
+        right:3%;
+        width:14%;
         top:110px;
-    }
-
-    figure{
-        float:none;
-        width:80%;
     }
 
     #map{
@@ -120,17 +123,4 @@ input, textarea{
     }
 }
 
-@media screen and (width <= 500px){
-    .whisk{
-        left: 82%;
-        top:130px;
-    }
-}
 
-@media screen and (width <= 450px){
-    .whisk{
-        width:15%;
-        left: 80%;
-        top:200px;
-    }
-}
