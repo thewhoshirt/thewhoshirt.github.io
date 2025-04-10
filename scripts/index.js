@@ -29,15 +29,10 @@ $(document).ready(function(){
 
    //  animating title knife
    $(".knife").click(function animateTitle(){
-    $(".knife").animate({ left:"-=200",top:"-=50", borderSpacing: +50 }, {
-        step: function(now,fx) {$(this).css('transform','rotate('+now+'deg)');},
-        duration:1500},'swing')
-         .animate({ left:"+=200",top:"+=50", borderSpacing: 0 }, {
-        step: function(now,fx) {
-          $(this).css('transform','rotate('+now+'deg)');  
-        },
-        duration:2000
-    },'linear')});
+    $(".knife").animate({ left:"-=200",top:"-=50", borderSpacing: +50 }, {step: function(now,fx) {
+            $(this).css('transform','rotate('+now+'deg)');},duration:1500},'swing')
+         .animate({ left:"+=200",top:"+=50", borderSpacing: 0 }, {step: function(now,fx) {
+            $(this).css('transform','rotate('+now+'deg)');},duration:2000},'linear')});
 
     // jquery ui sortable
     $( "#sortable" ).sortable({

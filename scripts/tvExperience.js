@@ -29,12 +29,11 @@ $(document).ready( function() {
 
     // rolling pin animations
     $(".rollingPin").click(function(){
-        $(".rollingPin").animate({borderSpacing: +720 }, {
-            step: function(now, fx) {$(this).css('transform','rotate('+now+'deg)');},duration:1000},'linear')
-            .animate({borderSpacing: 0 }, {
-                step: function(now, fx) {$(this).css('transform','rotate('+now+'deg)');},duration:1000},'linear')
+        $(".rollingPin").animate({borderSpacing: +720 }, {step: function(now, fx) 
+                {$(this).css('transform','rotate('+now+'deg)');},duration:1000},'linear')
+            .animate({borderSpacing: 0 }, {step: function(now, fx) 
+                {$(this).css('transform','rotate('+now+'deg)');},duration:1000},'linear')
     });
-
 
   // creates the accordion sections
     $( "#accordion" ).accordion({
@@ -43,6 +42,7 @@ $(document).ready( function() {
 
 // just commented out for live server
 
+    // youtube videos api
     // var apikey = "AIzaSyBygxWHhXyl-m3c3fGEhQzpWtCbDvlmdgQ";
     // var url = `https://www.googleapis.com/youtube/v3/playlistItems?playlistId=PLTzMGnJjrsSyDJU9XClzZtuJ6GAIsvRk7&part=snippet&maxResults=5&order=date&type=video&key=${apikey}`
     // $.get(url, function(data){
@@ -59,7 +59,7 @@ $(document).ready( function() {
     //         $("#videos").html(videoHtml);
     //     }
     //     else{
-    //         $("#videos").html("<p>No videos found.</p>")
+    //         $("#videos").html("<p>No videos found.</p>");
     //     }
-    // })
+    // });
 });
