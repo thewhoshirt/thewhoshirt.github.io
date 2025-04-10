@@ -107,6 +107,11 @@ img{
     
 }
 
+.imgContainer{
+    padding: 20px;
+    width: 40%;
+    float: left;
+} 
 
 
 .footer{
