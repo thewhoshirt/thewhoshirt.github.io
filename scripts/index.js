@@ -29,19 +29,24 @@ $(document).ready(function(){
 
    //  animating title knife
    $(".knife").click(function animateTitle(){
-    $(".knife").animate({ left:"100", borderSpacing: +50 }, {
+    $(".knife").animate({ left:"-=200",top:"-=50", borderSpacing: +50 }, {
         step: function(now,fx) {$(this).css('transform','rotate('+now+'deg)');},
         duration:1500},'swing')
-         .animate({ left:"230", borderSpacing: 0 }, {
+         .animate({ left:"+=200",top:"+=50", borderSpacing: 0 }, {
         step: function(now,fx) {
           $(this).css('transform','rotate('+now+'deg)');  
         },
         duration:2000
     },'linear')});
 
+    // jquery ui sortable
     $( "#sortable" ).sortable({
         axis: "x" ,
         items: "li:not(.ui-state-highlight)"
-        
+    });
+
+    $( "#sortable2" ).sortable({
+        axis: "y" ,
+        items: "li:not(.ui-state-highlight)"
     });
 });

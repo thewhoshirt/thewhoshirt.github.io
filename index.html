@@ -30,16 +30,22 @@
     </header>
 
     <main>
-        <figure class="animate__animated animate__slideInRight">
+        <figure  class="animate__animated animate__slideInRight bigscreen">
             <img src="./images/ramsay_w_fire.jpeg" class="chefPro"><figcaption>Fig 1. Gordon Ramsay when he guest judge on Masterchef Australia in Series 10, Ep. 15-18 [6] </figcaption>
         </figure>
-
+ 
         <div id="mainTitle">
             <h1 class="animate__animated animate__slideInLeft">Gordon Ramsay</h1>
             <h2 class="animate__animated animate__slideInLeft">CPRO 1102 Final Project - Resume Webpage</h2>
             <img src="./images/knifeDarkMode.png" class="knife" id="darkMode">
             <img src="./images/knifeLightMode.png" class="knife" id="lightMode">
         </div>
+
+        <!-- for smaller screens -->
+        <figure class="animate__animated animate__slideInRight smallscreen">
+            <img src="./images/ramsay_w_fire.jpeg" class="chefPro"><figcaption>Fig 1. Gordon Ramsay when he guest judge on Masterchef Australia in Series 10, Ep. 15-18 [6] </figcaption>
+        </figure>
+        
         <section class="animate__animated animate__slideInLeft">
             <h2>Why We Made This Website</h2>
             <div>
@@ -59,9 +65,30 @@
         </section>
         <div class="break"></div> 
         <br>
-            <h3>Rate These Ramsay Moments:</h3>
+        <section>
+            <h3>Rate Ramsay Moments:</h3>
             
             <ul id="sortable">
+                <li class="ui-state-default ui-state-highlight">Top</li>
+                <li class="ui-state-default">
+                    <img src="./images/gordon-ramsay-idiot-sandwich.gif">
+                </li>
+                <li class="ui-state-default">
+                    <img src="./images/Panini Head.jpeg">
+                </li>
+                <li class="ui-state-default">
+                    <img src="./images/Gran_Can_do_better.jpg">
+                </li>
+                <li class="ui-state-default">
+                    <img src="./images/until you laugh.gif">
+                </li>
+                <li class="ui-state-default">
+                    <img src="./images/egg_prank.gif">
+                </li>
+                <li class="ui-state-default ui-state-highlight" id="meh">Meh</li>
+            </ul>
+            <!-- for smaller screens -->
+            <ul id="sortable2">
                 <li class="ui-state-default ui-state-highlight">Top</li>
                 <li class="ui-state-default">
                     <img src="./images/gordon-ramsay-idiot-sandwich.gif">
@@ -83,7 +110,7 @@
             <br>
             <br>
             <p>Image Sources: [11], [4], [9], [5], [3]</p>
-            
+        </section>
         </div>
     <br>
     <br>

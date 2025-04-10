@@ -1,7 +1,4 @@
-body {
-    background-color: #f5f9dc;
-}
-
+/* navbar / header */
 .topNav{
     background-color: #112f08;
     overflow: hidden;
@@ -29,11 +26,20 @@ body {
     float: right;
 }
 
+/* main body */
+body {
+    background-color: #f5f9dc;
+}
+
 main{
     margin:20px 75px 20px 75px;
 }
 
+main p{
+    font-size: 18px;
+}
 
+/* headers */
 h1{
     font-size:40px;
 }
@@ -46,29 +52,34 @@ h3{
     font-size: 25px;
 }
 
-main p{
-    font-size: 18px;
-}
-
-figure{
-    float:right;
-    width:50%;
-    padding:10px;
-}
-img{
-    width: 100%;
-}
-
 #mainTitle{
     padding-top:10%;
     text-align: center;
     padding-bottom:10%
 }
 
+/* images */
+.bigscreen{
+    float:right;
+    width:50%;
+    padding:10px;
+}
+
+img{
+    width: 100%;
+}
+
+.smallscreen{
+    display:none;
+    width:80%;
+    padding-top:50px;
+}
+
+/* animated knife */
 .knife{
     width:20%;
     position:absolute;
-    left:230px;
+    left:16%;
     top:400px;
     border-spacing:0px;
 }
@@ -77,13 +88,15 @@ img{
     display:none;
 }
 
-#sortable { list-style-type: none; 
+/* jquery ui sortable */
+#sortable , #sortable2{ 
+    list-style-type: none; 
     margin: 0; 
     padding-bottom: 100px; 
     width: 1000px; 
 }
 
-#sortable li{ 
+#sortable li, #sortable2 li{ 
     margin: 1px 1px 1px 1px; 
     padding: 0px; 
     float: left; 
@@ -93,7 +106,7 @@ img{
     text-align: center; 
 }
 
-#sortable li img{ 
+#sortable li img, #sortable2 li img{ 
     float: left; 
     width: 100%; 
     height: 100%; 
@@ -102,13 +115,17 @@ img{
     
 }
 
-.imgContainer{
-    padding: 20px;
-    width: 40%;
-    float: left;
-} 
+#sortable2{
+    padding-left:10%;
+    padding-bottom: 1000px; 
+    width: 200px; 
+}
 
+#sortable2{
+    display:none;
+}
 
+/* footer */
 .footer{
     background-color: #9a4a0a;
     padding: 16px;
@@ -116,4 +133,37 @@ img{
     color: #060c04;
     position: sticky;
     width: auto;
+}
+
+/* media queries */
+@media screen and (width <= 1000px){
+    .knife{
+        width:45%;
+        left:30%;
+        top:370px;
+    }
+
+    .bigscreen , #sortable{
+        display:none;
+    }
+
+    .smallscreen, #sortable2{
+        display:block;
+    }
+}
+
+@media screen and (width <= 600px){
+    .knife{
+        top:400px
+    }
+}
+
+@media screen and (width <= 450px){
+    .knife{
+        top:500px;
+    }
+
+    .smallscreen{
+        width:70%;
+    }
 }
