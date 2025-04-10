@@ -33,10 +33,22 @@ main{
     margin:20px 75px 20px 75px;
 }
 
+
 h1{
     font-size:40px;
 }
 
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+main p{
+    font-size: 18px;
+}
 .chefPro{
     float:right;
     padding: 15px;

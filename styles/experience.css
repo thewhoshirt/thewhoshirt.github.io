@@ -35,6 +35,12 @@ main{
 h1{
     font-size:40px;
 }
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 25px;
+}
 
 .rollingPin{
     width:8.5%;
@@ -46,6 +52,9 @@ h1{
 
 #darkMode{
     display:none;
+}
+.accordion_tabs{
+background-color: #D5D8C3;
 }
 
 img{
