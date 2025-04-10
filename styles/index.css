@@ -53,20 +53,16 @@ h3{
 }
 
 #mainTitle{
-    padding-top:10%;
+    padding-top:15%;
     text-align: center;
-    padding-bottom:10%
+    padding-bottom:20%
 }
 
 /* images */
 .bigscreen{
     float:right;
     width:50%;
-    padding:10px;
-}
-
-img{
-    width: 100%;
+    padding:20px;
 }
 
 .smallscreen{
@@ -75,12 +71,21 @@ img{
     padding-top:50px;
 }
 
+img{
+    width:100%;
+}
+
+.imgContainer{
+    float:left;
+    width:50%
+}
+
 /* animated knife */
 .knife{
     width:20%;
     position:absolute;
-    left:16%;
-    top:400px;
+    left:15%;
+    top:480px;
     border-spacing:0px;
 }
 
@@ -125,6 +130,10 @@ img{
     display:none;
 }
 
+#rating{
+    padding-top:100px;
+}
+
 /* footer */
 .footer{
     background-color: #9a4a0a;
@@ -140,7 +149,6 @@ img{
     .knife{
         width:45%;
         left:30%;
-        top:370px;
     }
 
     .bigscreen , #sortable{
@@ -150,11 +158,20 @@ img{
     .smallscreen, #sortable2{
         display:block;
     }
+
+    .imgContainer{
+        float:none;
+        width:90%;
+    }
+
+    #rating{
+        padding-top:10px;
+    }
 }
 
 @media screen and (width <= 600px){
     .knife{
-        top:400px
+        top:400px;
     }
 }
 
