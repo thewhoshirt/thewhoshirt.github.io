@@ -1,6 +1,4 @@
-body {
-    background-color: #f5f9dc;
-}
+/* navbar / header */
 .topNav{
     background-color: #112f08;
     overflow: hidden;
@@ -28,20 +26,21 @@ body {
     float: right;
 }
 
+/* main body */
+body {
+    background-color: #f5f9dc;
+}
+
 main{
     margin:20px 75px 20px 75px;
 }
 
+/* headers */
 h1{
     font-size:40px;
 }
-h2{
-    font-size: 30px;
-}
-h3{
-    font-size: 25px;
-}
 
+/* animated rolling pin */
 .rollingPin{
     width:8.5%;
     position:absolute;
@@ -53,30 +52,21 @@ h3{
 #darkMode{
     display:none;
 }
-.accordion_tabs{
-background-color: #D5D8C3;
-}
 
+/* images */
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
-figcaption{
     float: right;
+    width:20%;
 }
 
+/* youtube video api */
 .video-container{
     display:inline-block;
     gap:20px;
     height:fit-content;
 }
 
-#darkMode{
-    display:none;
-}
-
+/* footer */
 .footer{
     background-color: #9a4a0a;
     padding: 16px;
@@ -84,5 +74,16 @@ figcaption{
     color: #060c04;
     position: sticky;
     width: auto;
+}
 
+/* media queries */
+@media screen and (width <= 750px){
+    img{
+        width:90%;
+    }
+
+    .rollingPin{
+        width:15%;
+        top:180px;
+    }
 }
