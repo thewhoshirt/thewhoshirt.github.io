@@ -71,9 +71,7 @@ img{
 
 }
 
-/* media queries */
 @media screen and (width <= 800px){
-
     /* main page */
     main{
         margin:20px 75px 20px 0px;
@@ -85,15 +83,15 @@ img{
 
     /* image */
     figure{
-        width:100%;
+        width:80%;
         float:none;
         margin-right:300px;
 
     }
 
-    /* ui tabs */
+    /* jquery ui tabs */
     #tabs{
-        width:85%;
+        width:80%;
     }
 
     ul{
@@ -101,3 +99,4 @@ img{
         padding-right:30px;
     }
 }
+    
