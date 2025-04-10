@@ -2,23 +2,23 @@ $(document).ready(function(){
     // sets page theme
     var currentTheme = localStorage.getItem("theme");
     if (currentTheme == null){
-        localStorage.setItem("theme","dark")
-    };
-    if (currentTheme == "light"){
-        $("body").css("backgroundColor","#f2f2f2")
-    };
+        localStorage.setItem("theme","light")
+    }
+    if (currentTheme == "dark"){
+        $("body").css({"backgroundColor":" #060c04","color":" #f9d864"});
+    }
 
     // toggles page theme with the button
     $("#theme").click(function(){
         currentTheme = localStorage.getItem("theme");
-        if (currentTheme == "dark"){
-            currentTheme = localStorage.setItem("theme","light");
-            $("body").css("backgroundColor","#f2f2f2")
+        if (currentTheme == "light"){
+            currentTheme = localStorage.setItem("theme","dark");
+            $("body").css({"backgroundColor":" #060c04","color":" #f9d864"})
         }
         else{
-            currentTheme = localStorage.setItem("theme","dark");
-            $("body").css("backgroundColor","slategray")
-        };
+            currentTheme = localStorage.setItem("theme","light");
+            $("body").css({"backgroundColor":" #f5f9dc","color":" #112f08"})
+        }
     });
     $("#contactForm").validate({
         rules:{
@@ -50,7 +50,7 @@ $(document).ready(function(){
             },
             phone:{
                 required:"Please enter your phone number",
-                minlength:"Plese enter a valid phone number"
+                minlength:"Please enter a valid phone number"
             },
             comment:{
                 required:"Please let me know why you want to contact me"

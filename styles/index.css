@@ -7,6 +7,7 @@ body {
     overflow: hidden;
     padding-left:16px;
     padding-right:16px;
+    width: auto;
 }
 
 .topNav a{
@@ -16,7 +17,6 @@ body {
     padding: 16px 18px;
     text-decoration: none;
     font-size: 17px;
-
 }
 .topNav a:hover {
     background-color: #9a4a0a;
@@ -40,12 +40,6 @@ h1{
     padding: 15px;
     padding-right:150px;
     width: 30%;
-}
-
-#mainTitle{
-    padding-top:10%;
-    text-align: center;
-    padding-bottom:10%
 }
 
 #mainTitle{

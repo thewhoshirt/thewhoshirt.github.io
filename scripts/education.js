@@ -2,10 +2,10 @@ $(document).ready(function(){
     // sets page theme
     var currentTheme = localStorage.getItem("theme");
     if (currentTheme == null){
-        localStorage.setItem("theme","dark")
+        localStorage.setItem("theme","light")
     }
-    if (currentTheme == "light"){
-        $("body").css("backgroundColor","#f5f9dc")
+    if (currentTheme == "dark"){
+        $("body").css({"backgroundColor":" #060c04","color":" #f9d864"});
     }
 
     // toggles page theme with the button

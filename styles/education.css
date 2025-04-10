@@ -49,6 +49,10 @@ img{
     left: 10%;
 }
 
+#darkMode{
+    display:none;
+}
+
 .footer{
     background-color: #9a4a0a;
     padding: 16px;
