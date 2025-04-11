@@ -29,8 +29,8 @@ $(document).ready(function(){
 
     // whisk animation
     $(".whisk").click(function animateTitle(){
-        $(".whisk").animate({borderSpacing: +100 }, {
-            step: function(now, fx) {$(this).css('transform','rotate('+now+'deg)');},duration:500},'linear')
+        $(".whisk").animate({borderSpacing: +100 }, {step: function(now, fx) 
+                {$(this).css('transform','rotate('+now+'deg)');},duration:500},'linear')
             .animate({ borderSpacing: 0 }, {step: function(now,fx) {
               $(this).css('transform','rotate('+now+'deg)');}, duration:500},'linear')
             .animate({ borderSpacing: +100 }, {step: function(now,fx) {
